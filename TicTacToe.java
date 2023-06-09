@@ -58,13 +58,13 @@ public class TicTacToe {
                 }
 
             
-            gameTitle[xCoordinate][yCoordinate] = 1;
+            gameTitle[yCoordinate][xCoordinate] = 1;
 
             }   
         
 
             public boolean checkIfOpen(int[][] gameTitle, int xCoordinate, int yCoordinate) {
-                if (gameTitle[xCoordinate][yCoordinate] == 0){
+                if (gameTitle[yCoordinate][xCoordinate] == 0){
                     return true;
                 } else {
                     return false;
@@ -102,7 +102,7 @@ public class TicTacToe {
 
                 }
 
-            gameTitle[xCoordinate][yCoordinate] = 2;
+            gameTitle[yCoordinate][xCoordinate] = 2;
             
 
             }
